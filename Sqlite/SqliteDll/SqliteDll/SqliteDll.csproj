@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{603B338C-58E1-4CE3-ACF6-D3EE1D149381}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SqliteDll</RootNamespace>
+    <AssemblyName>Code.External.Engine.Sqlite</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <CodePage>65001</CodePage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeExecute" command="C:\Users\Administrator\Desktop\cmd.txt" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>..\..\Plugins\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.SqliteClient">
+      <HintPath>..\..\Plugins\Mono.Data.SqliteClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\..\..\..\Program Files\Unity5\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\Program Files\Unity5\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DataMemberAttribute.cs" />
+    <Compile Include="Data\DataMemberInfo.cs" />
+    <Compile Include="ExtensionsCSharp\CollectionExtensions.cs" />
+    <Compile Include="ExtensionsCSharp\ObjectExtensions.cs" />
+    <Compile Include="ExtensionsCSharp\StringExtensions.cs" />
+    <Compile Include="ExtensionsCSharp\TypeExtensions.cs" />
+    <Compile Include="ExtensionsUnity\MonoBehaviourExtensions.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Reference\GeometryUtils.cs" />
+    <Compile Include="Reference\IRoutine.cs" />
+    <Compile Include="Reference\LazyValue.cs" />
+    <Compile Include="Reference\Result.cs" />
+    <Compile Include="Sqlite\DataMemberAttribute.cs" />
+    <Compile Include="Sqlite\EntityMemberAttribute.cs" />
+    <Compile Include="Sqlite\EntityTableAttribute.cs" />
+    <Compile Include="Sqlite\IDataMemberConverter.cs" />
+    <Compile Include="Sqlite\IDBUpdate.cs" />
+    <Compile Include="Sqlite\IgnoreEntityMemberAttribute.cs" />
+    <Compile Include="Sqlite\SqliteDatabase.cs" />
+    <Compile Include="ExtensionsUnity\MonoBehaviourHelper.cs" />
+    <Compile Include="ExtensionsUnity\ZipHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

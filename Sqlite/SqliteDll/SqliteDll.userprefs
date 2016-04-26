@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SqliteDll\Sqlite\SqliteDatabase.cs">
+    <Files>
+      <File FileName="SqliteDll\Sqlite\SqliteDatabase.cs" Line="19" Column="29" />
+      <File FileName="SqliteDll\ExtensionsUnity\MonoBehaviourExtensions.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="SqliteDll" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="Data" expanded="True" />
+            <Node name="ExtensionsCSharp" expanded="True" />
+            <Node name="ExtensionsUnity" expanded="True" />
+            <Node name="Sqlite" expanded="True">
+              <Node name="SqliteDatabase.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
